@@ -1,7 +1,8 @@
 <div class="text-center row">
-   <div class="col-sm-3">{{ticket.student}}</div>
-   <div class="col-sm-1">|</div>
-   <div class="col-sm-1">{{ticket.location}}</div>
-   <div class="col-sm-1">|</div>
-   <div class="col-sm-6">{{ticket.issue}}</div>
+  <div class="ticket-list col-sm-1"><h4>{{ticket.location}}</h4></div>
+  <div class="ticket-list col-sm-1">|</div>
+  <div class="ticket-list col-sm-3"><h4>{{ticket.student}}</h4></div>
+  <div class="ticket-list col-sm-1">|</div>
+
+  <div class="ticket-list col-sm-6"><h4>{{ticket.issue}}</h4><h5 class="text-muted small">{{moment-from-now ticket.open}}</h5></div>
 </div>

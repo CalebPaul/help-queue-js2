@@ -8,3 +8,5 @@ export default DS.Model.extend({
   opened: DS.attr(),
   closed: DS.attr()
 });
+
+// new Date().getTime()

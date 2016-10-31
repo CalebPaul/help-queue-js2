@@ -1,4 +1,7 @@
-
+<div class="well ticket-well">
   {{#each model as |ticket|}}
     {{ticket-tile ticket=ticket}}
   {{/each}}
+</div>
+
+{{new-ticket model=ticket saveTicket="saveTicket"}}

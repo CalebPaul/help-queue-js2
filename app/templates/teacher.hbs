@@ -1,1 +1,5 @@
-{{outlet}}
+<div class="well ticket-well">
+  {{#each model as |ticket|}}
+    {{hide-solved ticket}} {{ticket-tile ticket=ticket}}
+  {{/each}}
+</div>

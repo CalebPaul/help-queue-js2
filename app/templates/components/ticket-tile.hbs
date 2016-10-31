@@ -1,3 +1,5 @@
+
+{{#if ticket.solved}}
 <div class="text-center row">
   <div class="ticket-list col-sm-1"><h4>{{ticket.location}}</h4></div>
   <div class="ticket-list col-sm-1">|</div>
@@ -5,3 +7,4 @@
   <div class="ticket-list col-sm-1">|</div>
   <div class="ticket-list col-sm-6"><h4>{{ticket.issue}}</h4><h5 class="text-muted small">{{moment-from-now ticket.opened interval=1000}}</h5></div>
 </div>
+{{/if}}

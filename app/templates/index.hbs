@@ -1,7 +1,30 @@
-<div class="well ticket-well">
+<!-- <div class="well ticket-well">
   {{#each model as |ticket|}}
     {{ticket-tile ticket=ticket}}
   {{/each}}
-</div>
+</div> -->
+
+<table class="table  table-hover table-responsive">
+	<thead>
+		<tr>
+			<th>Location</th>
+			<th>In Queue</th>
+			<th>Student</th>
+      <th>Issue</th>
+		</tr>
+	</thead>
+	<tbody>
+    {{#each model as |ticket|}}
+
+		<tr>
+			<td>{{ticket.location}}</td>
+      <td class="text-muted small">{{moment-from-now ticket.opened interval=1000}}</td>
+			<td>{{ticket.student}}</td>
+			<td>{{ticket.issue}}</td>
+      {{log 'solved value: ' ticket.solved}}
+		</tr>
+    {{/each}}
+	</tbody>
+</table>
 
 {{new-ticket model=ticket saveTicket="saveTicket"}}

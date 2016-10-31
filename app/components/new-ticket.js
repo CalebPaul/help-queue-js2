@@ -7,6 +7,10 @@ export default Ember.Component.extend({
       this.set('addNewTicket', true);
     },
 
+    ticketFormHide() {
+      this.set('addNewTicket', false);
+    },
+
     saveTicket() {
       var params = {
         student: this.get('student'),

@@ -1,0 +1,30 @@
+{ "tickets": [{
+		"student": "Caleb",
+		"location": "2E",
+		"issue": "How do I Ember?",
+		"solved": false,
+		"opened": "10-27-2016",
+		"closed": "10-28-2016"
+	}, {
+    "student": "Ryan",
+		"location": "2D",
+		"issue": "How do I Timestamp?",
+		"solved": false,
+		"opened": "10-27-2016",
+		"closed": "10-28-2016"
+	}, {
+    "student": "Stephen and Satchel",
+		"location": "2X",
+		"issue": "What is the square root of a sandwich?",
+		"solved": true,
+		"opened": "10-27-2016",
+		"closed": "10-28-2016"
+	}, {
+    "student": "Peter, Paul and Mary",
+		"location": "4F",
+		"issue": "Puff the Magic Dragon?",
+		"solved": false,
+		"opened": "10-30-2016",
+		"closed": "10-31-2016"
+	}]
+}
